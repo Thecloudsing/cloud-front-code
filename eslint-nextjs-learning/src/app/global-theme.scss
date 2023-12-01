@@ -1,0 +1,49 @@
+$theme-color: #fff;
+$themes: (
+  light: (
+    background: $theme-color,
+    text: #000,
+  ),
+  dark: (
+    background: #000,
+    text: $theme-color,
+  ),
+);
+$current-theme: light;
+@mixin useTheme($option: True) {
+  @each $key, $value in $themes {
+    $current-theme: $key !global;
+    html[data-theme="#{$key}"] & {
+      @if $option == True {
+        @include map-unfold($value, $key);
+      }
+      @content;
+    }
+  }
+}
+@mixin map-unfold($object, $key) {
+  @if type-of($object) == map {
+    @each $key, $value in $object {
+      @include map-unfold($value, $key);
+    }
+  }
+  @else {
+    #{$key}: $object;
+  }
+}
+@function getCurrentTheme() {
+  $theme: map-get($themes, $current-theme);
+  @return $theme;
+}
+@function getThemeStyle($key) {
+  $theme: getCurrentTheme();
+  @return map-get($theme, $key);
+}
+@media (prefers-color-scheme: dark) {
+ 
+}
+.item {
+  width: 10rem;
+  height: 2rem;
+  @include useTheme;
+}

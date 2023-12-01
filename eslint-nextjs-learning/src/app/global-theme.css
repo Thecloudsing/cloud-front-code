@@ -1,0 +1,14 @@
+.item {
+  width: 10rem;
+  height: 2rem;
+}
+html[data-theme=light] .item {
+  background: #fff;
+  text: #000;
+}
+html[data-theme=dark] .item {
+  background: #000;
+  text: #fff;
+}
+
+/*# sourceMappingURL=global-theme.css.map */

@@ -1,0 +1,61 @@
+/* .dynamic-item-line {
+     margin: 15px 0;
+     height: 1px;
+     background-color: rgba(0, 0, 0, 0.05);
+   } */
+.as7 {
+    display: flex;
+}
+.as8 {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.as9 {
+    margin-left: 10px;
+    margin-top: -6px;
+}
+.as9 button {
+    width: 170%;
+    height: 28px;
+    border: none;
+    background: #0076fe;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+.as10 {
+    margin-top: 10px;
+    font-size: 11px;
+}
+.as12 button {
+    width: 80%;
+    height: 26px;
+    border: none;
+    background: #0076fe;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-left: 40px;
+}
+.user_table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_table table {
+    width: 100%;
+    margin: 30px;
+}
+.user_table table, table tr th {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    height: 40px;
+}
+.user_table table tr th {
+    padding: 5px 10px;
+}

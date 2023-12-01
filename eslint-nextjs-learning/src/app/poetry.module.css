@@ -1,0 +1,19 @@
+.main {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+.main p {
+  font-family: "SpringBreeze", sans-serif;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.verseName {
+  text-align: right;
+}
+
+/*# sourceMappingURL=poetry.module.css.map */

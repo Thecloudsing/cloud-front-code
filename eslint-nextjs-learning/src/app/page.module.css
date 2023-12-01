@@ -1,0 +1,20 @@
+.header {
+  text-align: center;
+  padding: 0.8rem;
+}
+.header p {
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 8px 40px -12px;
+}
+
+.grid {
+  background: #fff;
+  display: grid;
+  grid-gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 40px 24px;
+}
+
+/*# sourceMappingURL=page.module.css.map */

@@ -1,0 +1,22 @@
+.main {
+  margin: 0 auto;
+  padding: 0 .5rem;
+  //width: 40rem;
+
+  & p {
+    font-family: "SpringBreeze", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  //flex-wrap: wrap;
+  //white-space: pre-wrap;
+}
+.verse {
+
+}
+.verseName {
+  text-align: right;
+}

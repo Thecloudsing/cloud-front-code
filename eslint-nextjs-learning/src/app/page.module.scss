@@ -1,0 +1,24 @@
+@use "page" as *;
+.main {
+}
+.header {
+
+  text-align: center;
+  padding: .8rem;
+
+
+  & p {
+    border-radius: 1.5rem;
+    padding: .5rem;
+    background-color: $bg-color;
+    box-shadow: rgb(0 0 0 / 30%) 0 8px 40px -12px;
+
+  }
+}
+.grid {
+  background: #fff;
+  display: grid;
+  grid-gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 40px 24px;
+}
